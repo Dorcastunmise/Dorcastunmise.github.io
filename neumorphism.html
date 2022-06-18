@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/x-icon" rel="icon" href="C:\Users\Tunmise Alimi\Desktop\MY WEB PAGES\images\\favicon.ico.jpg">
+        <style>
+            * {
+    display: border-box;
+}
+body {
+    background-color: #d3d7f0;
+}
+
+.topic {
+    font-style: italic;
+    word-spacing: 3px;
+    letter-spacing: 6%;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: rgb(48, 48, 77);
+    background: linear-gradient(105deg, );
+    box-shadow: inset 2px 2px 3px #555,
+                inset -2px -2px 3px rgb(174, 184, 221);
+    font-size: 35px;
+    color: white;
+    padding: 40px;
+    display: block;
+}
+.topic >.glow {
+    border-radius: 3px;
+    height: 4px;
+}
+.leftlistings ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 240px;
+    background-color: rgb(48, 48, 71);
+    box-shadow: 7px 6px rgb(47, 79, 79, 0.3);
+    border-radius: 8px 12px;
+}
+.leftlistings li {
+    border-bottom: 1px solid #E6E7EE;
+}
+.leftlistings li:last-child {
+    border-bottom: none;
+}
+.leftlistings li a {
+    display: block;
+    padding: 15px 6px;
+    text-decoration: none;
+    color: rgb(139, 135, 153);
+}
+.leftlistings li a#active { 
+    background-color: rgb(84, 84, 177);
+    color: rgb(10, 10, 49);
+}
+.leftlistings li a:hover:not(#active) {
+    background-color: rgb(57, 74, 131);
+    color: rgb(17, 17, 63);
+    cursor: grab;
+}
+.rightlistings ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    float: right;
+    border-radius: 8px 12px;
+    border-bottom: 1px solid #E6E7EE;
+    background-color: rgb(48, 48, 71);
+    box-shadow: 12px 2px 4px 5px rgb(47, 79, 79, 0.3);
+}
+.rightlistings li {
+    border-bottom: 1px solid #E6E7EE;
+}
+.rightlistings li a {
+    display: block;
+    padding: 16px 21px;
+    color: rgb(139, 135, 153);
+    text-align: center;
+    text-decoration: none;
+}
+.rightlistings li:last-child {
+    border-bottom: none;
+}
+.rightlistings li a#active { 
+    background-color: rgb(84, 84, 177);
+    color: rgb(10, 10, 49);
+    cursor: auto;
+}
+.rightlistings li a:hover:not(#active) {
+    background-color: rgb(57, 74, 131);
+    color: rgb(17, 17, 63);
+    cursor: grab;
+}
+
+.note {
+    color: rgb(37, 36, 36);
+    float: right;
+    margin-top: 100px;
+    font-style: italic;
+    letter-spacing: 3%;
+    word-spacing: 3px;
+    margin-right: 150px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bubble {
+    background: rgba(145, 116, 116, 0.35);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(85, 37, 37, 0.18);
+}
+.neumorphism {
+    margin-top: 100px;
+    margin-left: 160px;
+    padding: 80px;
+    border: none;
+    border-radius: 86px;
+    background: linear-gradient(105deg, #cacaca, #f0f0f0);
+    box-shadow: 12px 22px 45px #6e6b6b,
+                -12px -22px 45px #d8d5d5;
+} 
+.quotes {
+    margin-left: 990px;
+    margin-top: -270px;
+    display: inline-block;
+    border-radius: 30px;
+    letter-spacing: 3%;
+    word-spacing: 3%;
+    color: rgb(45, 52, 71);
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(105deg);
+    box-shadow: inset 2px 2px 3px rgb(87, 82, 82),
+                inset -2px -2px 3px rgb(61, 69, 95);
+}
+.center {
+    text-align: center;
+}
+.pagination {
+    display: inline-block
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: yellow .3s;
+    margin: 0 4px;
+    font-size: 20px;
+}
+.bulb {
+    margin-top: -310px;
+    opacity: 0.8;
+    margin-left: 4px;
+    border-radius: 3px 8px;
+}
+.pagination a.active {
+    background-color: rgb(36, 48, 100);
+    color: white;
+    border-radius: 2px;
+}
+
+.pagination a:first-child {
+    border: 1px solid grey;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+    border: 1px solid grey;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #a6a6ce;
+    border-radius: 5px;
+}
+.endFooter {
+    background-color: rgb(43, 42, 94);
+    color: rgb(160, 174, 199);
+    text-align: center;
+    font-size: 22px;
+    border-radius: 8px 3px 12px;
+    padding: 15px;
+    background: linear-gradient(105deg);
+    box-shadow: inset 2px 2px 3px #555,
+                inset -2px -2px 3px rgb(174, 184, 221);
+}
+.endFooter:hover {
+    background-color: rgb(48, 29, 54);
+    color: rgb(114, 109, 151);
+}
+        </style>
+    </head>
+    <body>
+        <h1 class="topic"> 
+            <em>THE <div>
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCyctTR8DBToill4n7ZABEtMKy902k2aGL5A&usqp=CAU" 
+                style="border-radius: 8px; opacity: 0.8;"></a></div> PLATFORM </em></h1>
+        <h3 id="demo"></h3>
+        <div class="leftlistings">
+            <ul>
+               <li><a href="#homepage" class="home" id="active">Homepage</a></li>
+               <li><a href="#homepage" class="home">Sign up/ Login</a></li>
+               <li><a href="#homepage" class="home">Previous Editions</a></li>
+               <li><a href="#homepage" class="home">Speakers</a></li>
+               <li><a href="#homepage" class="home">About</a></li>
+            </ul>
+        </div>
+        <div class="rightlistings">
+            <ul>
+                <li><a href="#homepage" class="home">Donations</a></li>
+                <li><a href="#homepage" class="home">Beneficiaries</a></li>
+                <li><a href="#homepage" class="home">Gallery</a></li>
+            </ul>
+        </div>
+            <div class="bubble"></div>
+            <div class="notes">
+            <button class="neumorphism"><img src="C:\Users\Tunmise Alimi\Pictures\icon-location-20.png"></button>
+            </div> 
+            <div class="quotes"><b>"Every time you state what you want or believe,<br><br> you're the first to hear it.<br><br>It's a message to<br><br> both you and others<br><br> about what you think is possible.<br><br> Don't put a ceiling on yourself."
+            <br><br> - Oprah Winfrey</b></div>
+            <div class="bulb">
+                <a href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6OFJ1RydW0FA7MI95qed9BDD3vyu1KTpcOw&usqp=CAU">
+                </a>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="center">
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="https://theplatformnigeria.com/">Original Homepage</a>
+                    <a href="https://twitter.com/theplatformng">Twitter page</a>
+                    <a href="https://www.instagram.com/theplatformnigeria/">Instagram page</a>
+                    <a href="https://www.channelstv.com/2021/10/01/live-the-platform-nigeria-what-seest-thou/">video</a>
+                    <a href="#">&raquo;</a>
+                </div></div>
+                <br>
+                <script>
+                    setInterval(myFunction, 2000);
+        
+                    function myFunction() {
+                    let d = new Date();
+        
+                        document.getElementById('demo').innerHTML = d.getHours() + ":" +
+                        d.getMinutes() + ":" + 
+                        d.getSeconds();
+                    }
+                </script>
+                <div class="endFooter"> <p>www.platformnigeria.org</p></div>
+    </body>
+</html>
